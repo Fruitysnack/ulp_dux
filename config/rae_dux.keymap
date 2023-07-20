@@ -64,9 +64,6 @@
 
         COMBO(equal, &kp EQUAL, 12 23, 100)
         COMBO(enter, &kp ENTER, 17 26, 60)
-
-        COMBO(reset_left, &bootloader, 0 1 2 3, 100)
-        // COMBO(reset_right, &bootloader, 6 7 8 9, 100)
     };
 
     behaviors {
@@ -118,7 +115,7 @@
 		&kp DE_Q &kp DE_W &kp DE_E &kp DE_R &kp DE_T 						&kp DE_Z &kp DE_U  &kp DE_I    &kp DE_O   &kp DE_P 
 		&kp DE_A &kp DE_S &kp DE_D &kp DE_F &kp DE_G 			        	        &kp DE_H &kp DE_J &kp DE_K &kp DE_L &kp LCTRL
 		&kp DE_Y &kp DE_X &kp DE_C &kp DE_V &kp DE_B				      		&kp DE_N &kp DE_M  &kp DE_COMM &kp DE_DOT &kp BSPC
-          				&mo EXT &kp LSHIFT  						&kp SPC &mo SYM
+          			&kp ESC &mo EXT &kp LSHIFT  						&kp SPC &mo SYM &kp RET
 		>;
 		};
 
@@ -128,7 +125,7 @@
 		&kp DE_ASTR  	&kp DE_PLUS    &kp DE_1    &kp DE_2    &kp DE_3			&kp DE_AT &kp UP &kp DE_EURO &kp DE_SS &kp DE_UDIA 
 		&kp DE_SLSH    &kp DE_MINS    &kp DE_4      &kp DE_5     &kp DE_6 		&kp LEFT &kp DOWN  &kp RIGHT &kp DE_ODIA  &kp DE_ADIA 
 		&kp DE_EQL    &kp DE_0 		&kp DE_7  &kp DE_8  &kp DE_9 			&kp DE_LPRN &kp DE_RPRN &kp DE_QUES &kp DE_EXLM  &kp BSPC 
-					    &trans  &kp LSHIFT  					&kp RET &kp DEL 
+					&trans &trans  &kp LSHIFT  					&kp RET &kp DEL &trans
 		>;
 		};
 		
@@ -138,17 +135,17 @@
 		&kp DE_LCBR  &kp DE_RCBR &kp DE_QUOT  &kp DE_DQUO  &kp DE_SECT    			&kp ESC  &kp TAB &kp DE_CIRC &kp DE_ACUT &kp DE_GRV 
 		&kp DE_LBRC  &kp DE_RBRC  &kp DE_DLR  &kp DE_PERC  &kp DE_AMPR 				&kp LALT &kp LWIN  &kp LSHFT  &kp LCTRL   &kp RALT
 		&kp DE_LABK  &kp DE_RABK  &kp DE_SLSH  &kp DE_DEG   &kp DE_UNDS    			&kp DE_TILD  &kp DE_BSLS  &kp DE_PIPE  &kp DE_HASH   &kp DEL
-					  &kp K_CALC &kp LG(L)  							&trans  &trans 
+						 &trans &kp K_CALC &kp LG(L)  				&trans  &trans &trans
 		>;
 		};	
 		
 	// Used to change the keyboard's settings.
 		settings_layer {
 		bindings = <
-		&kp F1  &kp F2    &kp F3    &kp F4    &kp F5 			&kp F6	 &kp F7   &kp F8   &kp F9  &kp F10
-		&kp F11 &kp F12 &none &none &none  						&bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 
-		&bootloader  &none &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP   				&bt BT_SEL 5 &bt BT_CLR  &none  &none &bootloader   
-				 &trans &trans  					&none &none 
+		&kp F1  &kp F2    &kp F3    &kp F4    &kp F5 				&kp F6	 &kp F7   &kp F8   &kp F9  &kp F10
+		&kp F11 &kp F12 &trans &trans &trans  					&bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 
+		&bootloader  &trans &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP   		&bt BT_SEL 5 &bt BT_CLR  &trans  &trans &bootloader   
+				 &trans &trans &trans					&trans &trans &trans
 		>;
 		};
 	};
