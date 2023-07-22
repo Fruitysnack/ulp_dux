@@ -54,16 +54,6 @@
 
         COMBO(caps_word_right, &caps_word, 26 27, 60)
         COMBO(caps_word_left, &caps_word, 22 23, 60)
-
-        COMBO(colon, &kp COLON, 7 8, 60)
-        COMBO(semicolon, &kp SEMI, 27 28, 60)
-        COMBO(slash, &kp FSLH, 1 2, 60)
-
-        COMBO(minus, &kp MINUS, 31 32, 100)
-        COMBO(underscore, &kp UNDER, 33 34, 100)
-
-        COMBO(equal, &kp EQUAL, 12 23, 100)
-        COMBO(enter, &kp ENTER, 17 26, 60)
     };
 
     behaviors {
